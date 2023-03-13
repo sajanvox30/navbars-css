@@ -15,8 +15,22 @@
 <body>
     <div class="background"></div>
     <nav class="navbar">
-        img
+        <img class="navbar-logo" src="./assets/logo-icon.png" alt="Brand Logo">
+        <input type="text" placeholder="Search" class="navbar-search">
     </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <nav class="menu">
+        <a href="#" style="animation-delay: 0.1s;">Home</a>
+        <a href="#" style="animation-delay: 0.2s;">About</a>
+        <a href="#" style="animation-delay: 0.3s;">Services</a>
+        <a href="#" style="animation-delay: 0.4s;">Products</a>
+        <a href="#" style="animation-delay: 0.5s;">Contacts</a>
+    </nav>
+    <Script type="text/javascript">
+        const toggleMenu = () => {
+            document.body.classList.toggle("open");
+        };
+    </Script>
 
 </body>
 </html>
